@@ -17,12 +17,11 @@ public class Main {
             return "fizz";
         } else if (number % 7 == 0) {
             System.out.println("buzz");
+            return "buzz";
         } else {
             System.out.println(number);
-            return "buzz";
+            return "number";
         }
-
-        return "number";
     }
 
     //Задание 2
