@@ -22,15 +22,28 @@ class MainTest {
 
     @Test
     void makeReverseInstall() {
-        
+        String checkWord = "make install";
+        assertEquals("llatsni ekam", Main.makeReverseWord(checkWord));
     }
 
     @Test
     void findReadRoot() {
+        int a = 1;
+        int b = -3;
+        int c = 2;
+
+        assertEquals(true, Main.findReadRoot(a, b, c));
+
+        a = 1;
+        b = 2;
+        c = 5;
+
+        assertEquals(false, Main.findReadRoot(a, b, c));
     }
 
     @Test
     void calculateN() {
+
     }
 
     @Test

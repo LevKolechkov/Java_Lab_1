@@ -25,7 +25,7 @@ public class Main {
     }
 
     //Задание 2
-    public static String makeReverseInstall(String inputWord){
+    public static String makeReverseWord(String inputWord){
         String word = inputWord;
         String reversed = new StringBuilder(word).reverse().toString();
         System.out.println(reversed);
