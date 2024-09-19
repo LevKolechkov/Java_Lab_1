@@ -43,7 +43,9 @@ class MainTest {
 
     @Test
     void calculateN() {
+        double tinyNumber = Main.calculateN();
 
+        assertTrue((tinyNumber < Math.pow(10, -6)));
     }
 
     @Test

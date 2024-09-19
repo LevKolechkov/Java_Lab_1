@@ -53,7 +53,7 @@ public class Main {
     }
 
     //Задание 4
-    public static void calculateN(){
+    public static double calculateN(){
         int n = 2;
         double result;
 
@@ -61,7 +61,8 @@ public class Main {
             result = 1.0 / (n * n) + n - 2;
             n++;
         } while (result >= Math.pow(10, -6));
-        System.out.println("n = " + n + ", результат = " + result);
+        System.out.println("n = " + n + ", result = " + result);
+        return n;
     }
 
     //Задание 5
