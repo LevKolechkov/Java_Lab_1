@@ -6,21 +6,22 @@ public class Main {
     }
 
     //Задание 1
-    public static String fizzOrBuzz(){
-        for (int number = 1; number <= 500; number++) {
-            if (number % 5 == 0 && number % 7 == 0) {
-                System.out.println("fizzbuzz");
-                return "fizzbuzz";
-            } else if (number % 5 == 0) {
-                System.out.println("fizz");
-                return "fizz";
-            } else if (number % 7 == 0) {
-                System.out.println("buzz");
-            } else {
-                System.out.println(number);
-                return "buzz";
-            }
+    public static String fizzOrBuzz(int inputNumber){
+        int number = inputNumber;
+
+        if (number % 5 == 0 && number % 7 == 0) {
+            System.out.println("fizzbuzz");
+            return "fizzbuzz";
+        } else if (number % 5 == 0) {
+            System.out.println("fizz");
+            return "fizz";
+        } else if (number % 7 == 0) {
+            System.out.println("buzz");
+        } else {
+            System.out.println(number);
+            return "buzz";
         }
+
         return "number";
     }
 
