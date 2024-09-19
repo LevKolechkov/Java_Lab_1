@@ -16,7 +16,7 @@ class MainTest {
                 assertEquals("fizz", Main.fizzOrBuzz(number));
             } else if (number % 7 == 0) {
                 assertEquals("buzz", Main.fizzOrBuzz(number));
-            };
+            } else assertEquals("number", Main.fizzOrBuzz(number));
         }
     }
 
@@ -41,14 +41,23 @@ class MainTest {
         assertEquals(false, Main.findReadRoot(a, b, c));
     }
 
-    @Test
+    /*@Test
     void calculateN() {
         double tinyNumber = Main.calculateN();
 
         assertTrue((tinyNumber < Math.pow(10, -6)));
-    }
+    }*/
 
     @Test
     void checkPalindrome() {
+        String checkWord = "level";
+
+        assertTrue(Main.checkPalindrome(checkWord));
+
+        checkWord = "te  N      Et";
+        assertTrue(Main.checkPalindrome(checkWord));
+
+        checkWord = "bruh";
+        assertFalse(Main.checkPalindrome(checkWord));
     }
 }

@@ -71,11 +71,13 @@ public class Main {
         int len = cleanedStr.length();
 
         // Проверяем, является ли строка зеркальной
-        for (int i = 0; i < len / 2; i++) {
-            if (cleanedStr.charAt(i) != cleanedStr.charAt(len - i - 1)) {
+        for (int index = 0; index < len / 2; ++index) {
+            if (cleanedStr.charAt(index) != cleanedStr.charAt(len - index - 1)) {
+                System.out.println("The word IS NOT palindrome");
                 return false;
             }
         }
+        System.out.println("The word IS palindrome");
         return true;
     }
 }
