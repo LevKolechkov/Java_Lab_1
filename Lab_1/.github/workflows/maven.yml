@@ -19,7 +19,5 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
-      - name: Grand authorities to wrapper
-        run: chmod +x ./mvnw
       - name: Test with Maven
-        run: ./mvnw test
+        run: mvn test
